@@ -2,4 +2,5 @@
 .project
 .settings/
 target/
+!dependency-check-maven-sample/target/dependency-check-report.html
 
