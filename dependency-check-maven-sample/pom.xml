@@ -72,6 +72,7 @@
 				<version>6.1.5</version>
 				<configuration>
 					<assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+					<suppressionFiles>suppression.xml</suppressionFiles>
 				</configuration>
 				<executions>
 					<execution>
