@@ -19,6 +19,25 @@
 		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.sis.storage</groupId>
+			<artifactId>sis-netcdf</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sis.storage</groupId>
+			<artifactId>sis-storage</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.sis.storage/sis-earth-observation -->
+		<dependency>
+			<groupId>org.apache.sis.storage</groupId>
+			<artifactId>sis-earth-observation</artifactId>
+			<version>1.0</version>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
@@ -72,6 +91,7 @@
 				<version>6.1.5</version>
 				<configuration>
 					<assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+					<suppressionFiles>suppression.xml</suppressionFiles>
 				</configuration>
 				<executions>
 					<execution>
