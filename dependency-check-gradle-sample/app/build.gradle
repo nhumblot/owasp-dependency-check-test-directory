@@ -6,10 +6,21 @@
  * User Manual available at https://docs.gradle.org/7.4/userguide/building_java_projects.html
  */
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.owasp:dependency-check-gradle:6.5.3'
+    }
+}
+
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
 }
+
+apply plugin: 'org.owasp.dependencycheck'
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -32,4 +43,8 @@ application {
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+}
+
+task wrapper(type: Wrapper){
+    gradleVersion = '7.4'
 }
