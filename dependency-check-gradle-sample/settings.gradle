@@ -8,4 +8,3 @@
  */
 
 rootProject.name = 'dependency-check-gradle-sample'
-include('app')
