@@ -44,3 +44,9 @@ tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+dependencyCheck {
+    suppressionFiles = [
+            "src/main/resources/false_positives.xml"
+    ]
+}
