@@ -11,7 +11,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'org.owasp:dependency-check-gradle:7.1.1'
+        classpath 'org.owasp:dependency-check-gradle:8.0.1'
     }
 }
 
@@ -29,10 +29,7 @@ repositories {
 
 dependencies {
     // Use JUnit Jupiter for testing.
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
-
-    // This dependency is used by the application.
-    implementation 'com.google.guava:guava:30.1.1-jre'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
 }
 
 application {
